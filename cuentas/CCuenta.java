@@ -1,12 +1,10 @@
 package cuentas;
 
 public class CCuenta {
-
-
     private String nombre;
     private String cuenta;
     private double saldo;
-    private double tipoInterés;
+    private double tipoInteres;
 
     public CCuenta()
     {
@@ -17,6 +15,7 @@ public class CCuenta {
         nombre =nom;
         cuenta=cue;
         saldo=sal;
+        tipoInteres = tipo;
     }
 
     public double estado()
@@ -38,5 +37,37 @@ public class CCuenta {
         if (estado()< cantidad)
             throw new Exception ("No se hay suficiente saldo");
         saldo = saldo - cantidad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCuenta() {
+        return cuenta;
+    }
+
+    public void setCuenta(String cuenta) {
+        this.cuenta = cuenta;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public double getTipoInteres() {
+        return tipoInteres;
+    }
+
+    public void setTipoInteres(double tipoInteres) {
+        this.tipoInteres = tipoInteres;
     }
 }
