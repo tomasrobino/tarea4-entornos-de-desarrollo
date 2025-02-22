@@ -1,6 +1,13 @@
 package cuentas;
 
+/**
+ * Esta es una clase para crear cuentas
+ * @author Tomas Robino
+ */
 public class CCuenta {
+    /**
+     * Propiedades de la cuenta
+     */
     private String nombre;
     private String cuenta;
     private double saldo;
@@ -10,6 +17,13 @@ public class CCuenta {
     {
     }
 
+    /**
+     * Constructor que inicializa los valores de la cuenta
+     * @param nom Nombre del titular
+     * @param cue Cuenta del titular
+     * @param sal Saldo inicial de la cuenta
+     * @param tipo Tipo de interés de la cuenta
+     * */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
